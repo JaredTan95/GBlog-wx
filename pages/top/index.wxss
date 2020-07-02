@@ -1,0 +1,51 @@
+/* 轮播图 */
+.card-swiper {
+	height: 460rpx !important;
+}
+
+.card-swiper swiper-item {
+	width: 560rpx !important;
+	left: 92rpx;
+	box-sizing: border-box;
+	padding: 150rpx 20rpx 10rpx;
+	overflow: initial;
+}
+
+.card-swiper swiper-item .swiper-item {
+	width: 100%;
+	display: block;
+	height: 100%;
+	border-radius: 10rpx;
+	transform: scale(0.9);
+	transition: all 0.2s ease-in 0s;
+	overflow: hidden;
+}
+
+.card-swiper swiper-item.cur .swiper-item {
+	transform: none;
+	transition: all 0.2s ease-in 0s;
+}
+/* 顶图样式 */
+.UCenter-bg {
+  background-size: cover;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.fixed-bg {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1024;
+	box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.cu-bar .action .info {
+	padding-left: 20rpx;
+}

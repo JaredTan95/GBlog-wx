@@ -9,19 +9,19 @@
 	background-color: var(--white);
 	overflow: hidden;
 	border-radius: 10rpx;
-	margin: 30rpx;
+	margin: 20rpx;
 }
 .cu-card.article>.cu-item .content>image {
-	width: 240rpx;
-	height: 6.4em;
+	width: 180rpx;
+	height: 4.8em;
 	margin-right: 20rpx;
 	border-radius: 6rpx;
 }
 .cu-card.article>.cu-item .content .text-content {
-	width: 350rpx;
+	width: 400rpx;
 	font-size: 22rpx;
 	color: #888;
-	height: 3.5em;
+	height: 4.4em;
 	overflow: hidden;
 }
 .cu-card.article>.cu-item .title {

@@ -1,7 +1,8 @@
 <wxs src="../../utils/tools.wxs" module="tools" />
 <!-- 顶图 -->
-<view class="UCenter-bg" style="background-image: url({{swiperImage}});">
-  <!--轮播图 -->
+
+<!-- 轮播图 -->
+<!-- <view class="UCenter-bg" style="background-image: url({{swiperImage}});">
   <swiper class="card-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
     <swiper-item wx:for="{{swiper}}" wx:key="index" class="{{cardCur==index?'cur':''}}">
       <view class="swiper-item" bindtap="swaper" data-id="{{item.id}}">
@@ -9,12 +10,13 @@
       </view>
     </swiper-item>
   </swiper>
-</view>
+</view> -->
+
 <!--  搜索框  -->
 <view class="cu-bar search bg-white">
   <view class="search-form round">
     <text class="cuIcon-search"></text>
-    <input type="text" placeholder="搜索文章" confirm-type="search" bindconfirm="onSearch"></input>
+    <input type="text" placeholder="搜索职位" confirm-type="search" bindconfirm="onSearch"></input>
   </view>
 </view>
 

@@ -1,91 +1,81 @@
 {
-	"pages": [
-		"pages/index/index",
-		"pages/details/index",
-		"pages/photos/home/index",
-		"pages/photos/details/index",
-		"pages/search/index",
-		"pages/type/index",
-		"pages/tag/index",
-		"pages/about/home/index",
-		"pages/about/about/index",
-		"pages/about/archives/index",
-		"pages/about/disclaimer/index",
-		"pages/about/guestbook/index",
-		"pages/about/journal/index",
-		"pages/about/links/index",
-		"pages/about/notice/index",
-		"pages/admin/article/index",
-		"pages/admin/attachment/home/index",
-		"pages/admin/attachment/details/index",
-		"pages/admin/attachment/select/index",
-		"pages/admin/category/index",
-		"pages/admin/comment/index",
-		"pages/admin/environments/index",
-		"pages/admin/home/index",
-		"pages/admin/journal/home/index",
-		"pages/admin/links/home/index",
-		"pages/admin/login/index",
-		"pages/admin/menu/list/index",
-		"pages/admin/photos/details/index",
-		"pages/admin/photos/home/index",
-		"pages/admin/setting/index",
-		"pages/admin/tag/index",
-		"pages/admin/theme/list/index",
-		"pages/admin/user/index",
+  "pages": [
+    "pages/contact/index",
+    "pages/top/index",
+    "pages/index/index",
+    "pages/details/index",
+    "pages/photos/home/index",
+    "pages/photos/details/index",
+    "pages/search/index",
+    "pages/type/index",
+    "pages/tag/index",
+    "pages/about/home/index",
+    "pages/about/about/index",
+    "pages/about/archives/index",
+    "pages/about/disclaimer/index",
+    "pages/about/guestbook/index",
+    "pages/about/journal/index",
+    "pages/about/links/index",
+    "pages/about/notice/index",
+    "pages/admin/article/index",
+    "pages/admin/attachment/home/index",
+    "pages/admin/attachment/details/index",
+    "pages/admin/attachment/select/index",
+    "pages/admin/category/index",
+    "pages/admin/comment/index",
+    "pages/admin/environments/index",
+    "pages/admin/home/index",
+    "pages/admin/journal/home/index",
+    "pages/admin/links/home/index",
+    "pages/admin/login/index",
+    "pages/admin/menu/list/index",
+    "pages/admin/photos/details/index",
+    "pages/admin/photos/home/index",
+    "pages/admin/setting/index",
+    "pages/admin/tag/index",
+    "pages/admin/theme/list/index",
+    "pages/admin/user/index",
     "component/article-list/index"
-	],
-	"window": {
-		"navigationBarBackgroundColor": "#39b54a",
-    "navigationBarTitleText": "Geek Era",
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "重庆IT内推圈",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
-	},
-	"usingComponents": {
-		"cu-custom": "/colorui/components/cu-custom"
-	},
-	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#000000",
-		"borderStyle": "black",
-		"backgroundColor": "#fdfefa",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"iconPath": "images/icon/home.png",
-				"selectedIconPath": "images/icon/home-hover.png",
-				"text": "首页"
-			},
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#fdfefa",
+    "list": [
       {
-        "pagePath": "pages/type/index",
-        "iconPath": "images/icon/type.png",
-        "selectedIconPath": "images/icon/type-hover.png",
-        "text": "分类"
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/search-job.png",
+        "selectedIconPath": "images/icon/search-job-hover.png",
+        "text": "看机会"
       },
       {
-        "pagePath": "pages/photos/home/index",
-        "iconPath": "images/icon/photo.png",
-        "selectedIconPath": "images/icon/photo-hover.png",
-        "text": "光影"
+        "pagePath": "pages/top/index",
+        "iconPath": "images/icon/top.png",
+        "selectedIconPath": "images/icon/top-hover.png",
+        "text": "职气榜"
       },
-			{
-				"pagePath": "pages/about/home/index",
-				"iconPath": "images/icon/about.png",
-				"selectedIconPath": "images/icon/about-hover.png",
-				"text": "关于"
-			},
-			{
-				"pagePath": "pages/admin/home/index",
-				"iconPath": "images/icon/admin.png",
-				"selectedIconPath": "images/icon/admin-hover.png",
-				"text": "管理"
-			}
-		]
-	},
-	"networkTimeout": {
-		"request": 60000,
-		"downloadFile": 60000
-	},
-	"debug": true,
-	"sitemapLocation": "sitemap.json"
+      {
+        "pagePath": "pages/contact/index",
+        "iconPath": "images/icon/mail.png",
+        "selectedIconPath": "images/icon/mail-hover.png",
+        "text": "联系/反馈"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 60000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

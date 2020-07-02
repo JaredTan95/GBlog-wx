@@ -33,7 +33,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
-	"appid": "",
+	"appid": "wx1151e503b8c5f060",
 	"projectname": "GBlog-wx",
 	"debugOptions": {
 		"hidedInDevtools": []

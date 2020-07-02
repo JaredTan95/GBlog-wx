@@ -1,0 +1,30 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<!-- 顶图 -->
+
+<!-- 轮播图 -->
+<view class="UCenter-bg" style="background-image: url({{swiperImage}});">
+<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+</view>
+
+<view class="cu-bar solid-bottom">
+	<view class="action">
+	  <text class="title text-gray">职气榜</text> 
+	  <text class="info cuIcon-info text-gray"></text>
+	</view>
+</view>
+
+<!--  文章列表展示  -->
+
+<article-list content="{{content}}"></article-list>
+<!-- 下拉加载分页 -->
+<view class="cu-load {{loading==true?'loading':'over'}}"></view>
+<!-- 加载框 -->
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+	<image src="{{logo}}" class='png' mode='aspectFit'></image>
+	<view class='gray-text'>加载中...</view>
+</view>
