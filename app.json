@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/contact/index",
-    "pages/top/index",
     "pages/index/index",
+    "pages/top/index",
+    "pages/contact/index",
     "pages/details/index",
     "pages/photos/home/index",
     "pages/photos/details/index",
