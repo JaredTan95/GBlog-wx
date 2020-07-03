@@ -40,9 +40,6 @@
     bindlinkpress="linkpress">
     </parser>
   <!-- 正文结束分割线 -->
-  <view class="line">
-    <span>正文结束</span>
-  </view>
   <!-- 文章标签 -->
   <view class="padding-sm flex flex-wrap">
     <view class="padding-xs" wx:for="{{tags}}" wx:for-item="item" wx:key="index" data-id='{{item.id}}' bindtap='toTagPage'>
@@ -51,13 +48,12 @@
   </view>
   <!-- 点赞、分线 -->
   <view class="flex solid-bottom padding-xs justify-center">
-      <view class="padding-xs margin-xs radius" bindtap="addStar" data-gid='{{id}}' data-lovecount='{{loveCount}}'><text class="cuIcon-appreciate"></text></view>
-      <view class="padding-xs margin-xs radius" bindtap="share" data-gid='{{id}}'><text class="cuIcon-share"></text></view>
+      <view class="padding-xs margin-xs radius text-green" bindtap="addStar" data-gid='{{id}}' data-lovecount='{{loveCount}}'><text class="cuIcon-appreciate"></text> 顶一下</view>
     </view>
 </view>
 
 <!-- 返回顶端 -->
-<image class="returnTop" src='/images/returntop.png' bindtap="returnTop" hidden='{{!floorstatus}}'></image>
+<text class="returnTop cuIcon-top lg text-gray" hidden='{{!floorstatus}}' bindtap="returnTop"></text>
 
 <!-- 提示框 -->
 <view class="cu-modal {{msgFlag==true?'show':''}}">
@@ -84,17 +80,42 @@
 <view class="cu-modal bottom-modal {{modalShare?'show':''}}">
   <view class="cu-dialog">
     <view class="cu-bar bg-white">
-      
       <view class="action text-blue" bindtap="hideModalshare">取消</view>
     </view>
     <view class="padding-xl">
-      <button class="cu-btn line-orange margin-left-sm lg" open-type="share">
-        <text class="cuIcon-weixin text-green"></text> 朋友</button>
-      <button class="cu-btn line-orange margin-right-sm lg" bindtap="shareFriends" wx:if="{{shareIsOpen}}">
-        <text class="cuIcon-pic text-blue"></text>海报</button>
+      <button class="cu-btn" open-type="share">
+        <text class="cuIcon-weixin text-green"></text> 
+          <view class="text-green text-center">朋友圈</view>
+        </button>
+      <button class="cu-btn" bindtap="shareFriends" wx:if="{{shareIsOpen}}">
+        <text class="cuIcon-pic text-blue"></text>
+          <view class="text-blue text-center">海报</view>
+      </button>
     </view>
   </view>
 </view>
+
+<!-- 联系招聘者弹窗 -->
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white">
+      <view class="action text-blue" bindtap="hideModal">取消</view>
+    </view>
+    <view class="padding-xl">
+      招聘者微信/邮箱：xxxxxxx
+    </view>
+  </view>
+</view>
+
+<view class="flex flex-direction">
+  <button class="cu-btn bg-white margin-tb-xs lg"  bindtap="showModal" data-target="bottomModal">
+   <view class="text-green text-center">联系招聘者</view>
+   </button>
+  <button class="cu-btn bg-white margin-tb-xs lg" bindtap="share" data-gid='{{id}}'>
+  <view class="text-green text-center">分享</view>
+  </button>
+</view>
+
 
 <!-- 评论 -->
 <view class="cu-bar bg-white">
